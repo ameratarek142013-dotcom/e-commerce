@@ -144,12 +144,12 @@ export default function NavbarDetails({ numOfCartItems, numOfWishlistItems, resp
               placeholder="Search for products, brands and more..."
               className="w-full pl-5 pr-16 py-2.5 rounded-full border border-[#E2E8F0] bg-[#F8FAFC] focus:ring-2 focus:ring-[#16A34A] focus:border-transparent transition duration-150 outline-none text-sm"
             />
-              <button type="submit"
-                className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#16A34A] text-white p-2 rounded-full hover:bg-[#15803D] transition duration-300 cursor-pointer"
-                aria-label="Search"
-              >
-                <Search className="h-4 w-4" />
-              </button>
+            <button type="submit"
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#16A34A] text-white p-2 rounded-full hover:bg-[#15803D] transition duration-300 cursor-pointer"
+              aria-label="Search"
+            >
+              <Search className="h-4 w-4" />
+            </button>
           </form>
 
           {/* 3. روابط التنقل الرئيسية (الشاشات الكبيرة) */}
@@ -373,12 +373,12 @@ export default function NavbarDetails({ numOfCartItems, numOfWishlistItems, resp
               placeholder="Search products..."
               className="w-full pl-4 pr-12 py-2.5 rounded-xl border border-gray-200 bg-white placeholder-gray-400 text-sm focus:outline-none focus:border-[#16A34A] focus:ring-1 focus:ring-[#16A34A] transition"
             />
-              <button type="submit"
-                className="absolute right-1.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-lg bg-[#16A34A] text-white flex items-center justify-center hover:bg-[#15803D] transition cursor-pointer"
-                aria-label="Search"
-              >
-                <Search className="h-4 w-4" />
-              </button>
+            <button type="submit"
+              className="absolute right-1.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-lg bg-[#16A34A] text-white flex items-center justify-center hover:bg-[#15803D] transition cursor-pointer"
+              aria-label="Search"
+            >
+              <Search className="h-4 w-4" />
+            </button>
           </form>
 
           {/* خط فاصل */}
@@ -424,9 +424,10 @@ export default function NavbarDetails({ numOfCartItems, numOfWishlistItems, resp
               </div>
 
               {/* الجزء الأيمن: البادج الأحمر الذي يحتوي على الرقم */}
-              <span className="bg-[#EF4444] text-white text-xs font-bold w-6 h-6 flex items-center justify-center rounded-full shadow-sm">
-                1
-              </span>
+              {numOfWishlistItems > 0 && <span className="bg-[#EF4444] text-white text-xs font-bold w-6 h-6 flex items-center justify-center rounded-full shadow-sm">
+                {numOfWishlistItems}
+              </span>}
+
             </Link>
 
             {/* Cart */}
