@@ -14,7 +14,7 @@ export default function CartItemCard({ product }: { product: Product }) {
 
   return (
     <div
-      className={` bg-white rounded-2xl p-5 border border-gray-100 shadow-sm relative hover:shadow-md duration-300 transition-all flex items-start gap-5 ${isUpdating ? "pointer-events-none" : ""
+      className={`bg-white rounded-2xl p-5 border border-gray-100 shadow-sm relative hover:shadow-md duration-300 transition-all flex items-start gap-5 ${isUpdating ? "pointer-events-none" : ""
         }`}
     >
       {/* طبقة الـ Blur + Loading Overlay */}
@@ -52,12 +52,12 @@ export default function CartItemCard({ product }: { product: Product }) {
             {product.product.title}
           </h3>
 
-          <div className="flex items-center gap-2 text-xs">
-            <span className="bg-[#ECFDF5] text-[#16A34A] font-medium px-3 py-0.5 rounded-full">
+          <div className="flex items-center gap-0.5 text-xs">
+            <span className="bg-[#ECFDF5] text-[#16A34A] text-xs md:text-base font-medium px-1 py-0.5 rounded-full">
               {product.product.category.name}
             </span>
             <span className="text-gray-300">•</span>
-            <span className="text-gray-400 font-medium uppercase">
+            <span className="text-gray-400 font-xs uppercase ">
               SKU: {product.product.id.slice(-6)}
             </span>
           </div>
@@ -72,11 +72,11 @@ export default function CartItemCard({ product }: { product: Product }) {
           </div>
         </div>
 
-        <div className="flex items-center justify-between gap-5">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-5">
 
           <UpdateCartBtn productId={product.product.id} count={product.count} />
 
-          <div className="flex items-center gap-5">
+          <div className="flex items-center  gap-5">
             <div className="text-right">
               <span className="text-xs text-gray-400 font-medium block leading-tight mb-0.5">
                 Total

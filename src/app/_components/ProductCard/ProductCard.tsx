@@ -37,9 +37,6 @@ export default function ProductCard({ product, isWishListed }: { product: Produc
                 {/* الأزرار العائمة على اليمين (Wishlist, Compare, Quick View) */}
                 <div className="absolute top-3 right-3 flex flex-col gap-2 opacity-95">
                     <AddToWishlistBtn productId={product.id} isWishListed={isWishListed} />
-                    <button className="w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center text-gray-700 hover:text-emerald-700  transition-colors">
-                        <RefreshCw size={18} />
-                    </button>
                     <Link href={`/products/${product.id}`} className="w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center text-gray-700 hover:text-green-600  transition-colors">
                         <Eye size={18} />
                     </Link>

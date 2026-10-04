@@ -96,7 +96,7 @@ export default async function Products({ isHome, searchParams }: { isHome: boole
           </div>
         )}
 
-        <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mt-6'>
+        <div className='grid  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6 mt-6'>
           {filteredProducts.length === 0 ? <>
             <div className="col-span-full py-20 text-center">
               <div className="mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
