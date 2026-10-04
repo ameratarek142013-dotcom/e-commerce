@@ -1,0 +1,84 @@
+{
+  "files.watcherExclude": {
+    "**/.git/**": true,
+    "**/.next/**": true,
+    "**/node_modules/**": true,
+    "**/coverage/**": true,
+    "**/dist/**": true,
+    "**/build/**": true
+  },
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.tsserver.maxTsServerMemory": 4096,
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredLightColorTheme": "One Dark Pro Night Flat",
+  "files.autoSave": "onFocusChange",
+  "search.exclude": {
+    "**/.next": true,
+    "**/node_modules": true,
+    "**/.git": true,
+    "**/.turbo": true
+  },
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "on"
+  },
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.tabCompletion": "on",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.wordBasedSuggestions": "matchingDocuments",
+  "editor.parameterHints.enabled": true,
+  "typescript.suggest.autoImports": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.completeFunctionCalls": true,
+  "javascript.suggest.completeFunctionCalls": true,
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "tailwindCSS.includeLanguages": {
+    "typescript": "javascript",
+    "typescriptreact": "javascript"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "workbench.colorCustomizations": {
+    "editorGroupHeader.tabsBorder": "#008B8B",
+    "tab.selectedBorderTop": "#008B8B"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "git.autofetch": true,
+  "debug.breakpointsView.presentation": "tree",
+  "css.lint.unknownAtRules": "ignore",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": "C:\\WINDOWS\\System32\\cmd.exe",
+      "args": []
+    },
+    "Git Bash": {
+      "source": "Git Bash",
+      "icon": "terminal-git-bash"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "chat.viewSessions.orientation": "stacked",
+  "chat.disableAIFeatures": true,
+  "liveServer.settings.multiRootWorkspaceName": "e-commerce"
+}
